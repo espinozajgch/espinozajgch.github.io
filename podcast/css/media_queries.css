@@ -1,0 +1,297 @@
+@media screen and (min-width: 1200px){
+    .topicos {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #menu:checked + .buttons + .navbar-nav {
+        display: flex;
+    } 
+
+    .navbar .buttons{
+        display: none;
+    }
+
+    .navbar-nav .nav-item a {
+        color: #060A24;
+    }
+
+    header {
+        margin-top: 120px;
+        margin-left: 200px;
+    }
+
+    header h1 {
+        font-size: 64px;
+        line-height: 84px;
+    }
+
+    .episodios .podcasts .pod {
+        margin-bottom: 72px;
+    }
+
+    .episodios .podcasts {
+        margin-top: 26px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .episodios .podcasts .pod {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .entrevistas h2 {
+        margin-left: 200px;
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    .entrevistas .fotos-contenedor {
+        margin-top: 36px;
+    }
+
+    .topicos {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 34px;
+        margin-top: 64px;
+    }
+
+    .topicos h2 {
+        font-size: 48px;
+        line-height: 62px;
+    }
+
+    .nosotros {
+        margin-top: 0px;
+        overflow: visible;
+        align-items: flex-start;
+    }
+
+    .nosotros .celular {
+        margin-top: -168px;
+        width: 457.6px;
+    }
+
+    .nosotros .venimos-textos h2 {
+        margin-bottom: 24px;
+        line-height: 62px;
+        font-size: 48px;
+    }
+
+    .nosotros .venimos-textos p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .novedades .contenido h2 {
+        font-size: 48px;
+    }
+
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+    #menu:checked + .buttons + .navbar-nav {
+        display: flex;
+    } 
+
+    .navbar-nav .nav-item a {
+        color: #060A24;
+    }
+
+    .navbar .buttons{
+        display: none;
+    }
+
+    .episodios h2 {
+        font-size: 48px;
+        padding-top: 130px;
+        line-height: 62px;
+        margin-left: 16px;
+    }
+
+    header p {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .episodios {
+        height: 630px;
+    }
+
+    .episodios .diagonal-ep {
+        height: 680px;
+    }
+
+    .topicos .topicos-cards .icon-box {
+        width: 50%;
+        margin: 0;
+    }
+
+    .topicos .topicos-cards .icon-box h4 {
+        margin-top: 16px;
+        width: 220px;
+    }
+
+    .nosotros .venimos-textos {
+        margin-top: 100px;
+    }
+
+    .nosotros .venimos-textos h2 {
+        margin-bottom: 24px;
+        line-height: 62px;
+        font-size: 48px;
+    }
+
+    .nosotros .celular {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    
+    .navbar{
+        justify-content: space-between;
+        /*padding-left: 16px;
+        /*padding-right: 16px;*/
+        height: 44px; 
+    }
+
+    .navbar li{
+        margin-left: 0px;
+        padding-left: 16px;/**/
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .navbar-nav {
+        display: none;/**/
+        background-color: #0000EC;
+        flex-direction: column;
+        position: absolute;
+        /*justify-content: left !important;/**/
+        right: 0px;/**/
+        left: 100%;/**/
+        top: 44px;/**/
+        width: 98.1%;/**/
+        transition: 0.5s all;
+        overflow: hidden;
+    }
+
+    header p {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    header .display-block{
+        display: block;
+    }
+
+    header .movil{
+        display: inline;
+    }
+
+    header .desktop{
+        display: none;
+    }
+
+    header button {
+        margin-top: 36px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .episodios h2 {
+        font-size: 36px;
+        padding-top: 100px;
+        line-height: 42px;
+        margin-left: 16px;
+    }
+
+    .episodios {
+        height: 520px;
+    }
+
+    .episodios .diagonal-ep {
+        height: 600px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros .celular {
+        width: 350px;
+    }
+
+    .nosotros .venimos-textos {
+        padding-top: 0px;
+        width: 90%;
+    }
+
+    .footer-bar{
+        flex-direction: column;
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+
+    .entrevistas .fotos-contenedor .foto-inv {
+        width: 50%;
+    }
+
+    .topicos .topicos-cards .icon-box {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .episodios .podcasts .pod {
+        width: 100%;
+        /*height: 152px;
+        border: none;*/
+        margin-bottom: 8px;
+    }
+
+    .episodios {
+        height: 900px;
+    }
+
+    .entrevistas .fotos-contenedor {
+        flex-direction: column;
+    }
+
+    .entrevistas .fotos-contenedor .foto-inv {
+        width: 100%;
+    }
+
+    .topicos .topicos-cards .icon-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .episodios .diagonal-ep {
+        height: 992px;
+    }
+
+    .nosotros .celular {
+        width: 100%;
+    }
+
+    .novedades{
+        height: 341px;/**/
+    }
+
+    .novedades .contenido button {
+        width: 90%;
+    }
+}

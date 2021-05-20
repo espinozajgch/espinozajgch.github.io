@@ -158,8 +158,6 @@
     
     .navbar{
         justify-content: space-between;
-        /*padding-left: 16px;
-        /*padding-right: 16px;*/
         height: 44px; 
     }
 
@@ -175,7 +173,6 @@
         background-color: #0000EC;
         flex-direction: column;
         position: absolute;
-        /*justify-content: left !important;/**/
         right: 0px;/**/
         left: 100%;/**/
         top: 44px;/**/
@@ -257,8 +254,6 @@
 @media screen and (max-width: 600px) {
     .episodios .podcasts .pod {
         width: 100%;
-        /*height: 152px;
-        border: none;*/
         margin-bottom: 8px;
     }
 

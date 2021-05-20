@@ -1,3 +1,4 @@
+/*Ajustes iniciales*/
 * {
     margin:  0;
     padding: 0;
@@ -5,29 +6,40 @@
     outline: 0;
     font-size: 100%;
     color: #000;
-    
 }
 
+/*permitir un desplazamiento suave de toda la página*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Ajustes iniciales para listas*/
 ol, ul {
     list-style: none;
     padding: 0;
 }
 
+/*Ajustes iniciales para links*/
 a {
     text-decoration: none;
     padding: 0;
 }
 
-.main {
-    width: 100%; 
-    
+/*definicion del estilo de fuente para toda la pagina*/
+body{
+    font-family: "IBM Plex Mono", monospace;
+    /*font-family: "IBM Plex Sans", sans-serif;/**/
 }
 
 .contenedor {
-    /*display: flex;/**/ 
     width: 100%; 
 }
 
+.main {
+    width: 100%;     
+}
+
+/*INICIO NAV-BAR*/
 .navbar-dark{
     background-color: #333;
 }
@@ -36,10 +48,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /*overflow: hidden;
-    background-color: #333;
-    
-    /*top: 0;*/
+    /*overflow: hidden;*/
     width: 100%;
     height: 80px;
     box-sizing: border-box;
@@ -60,30 +69,24 @@ a {
 }
 
 .navbar-nav {
-    padding: 7px;/**/
+    padding: 7px;
     display: flex;
-    /*flex-direction: row; 
-    align-items: center;
-    height: 100%;*/
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 28px;
-    /*padding-top: 16px;/**/
 }
 
 .navbar-nav .nav-item a {
-        /*display: block;/**/
-        position: relative;
-        text-decoration: none;
-        color: #FFFF;
-        margin-bottom: 24px;
-        font-family: "IBM Plex Mono", monospace;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 28px;
+    position: relative;
+    text-decoration: none;
+    color: #FFFF;
+    margin-bottom: 24px;
+    
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .navbar-nav li{
@@ -91,7 +94,6 @@ a {
 }
 
 .navbar-nav a:hover {
-    /*background: #ddd;/**/
     color: #00F3BB !important;
     text-decoration: line-through;
 }
@@ -104,7 +106,7 @@ a {
     color: rgba(6, 10, 36, 0.56);
 }
 
-/* Btn */
+/* INICIO MENU HAMBURGUESA */
 .navbar .buttons {
     cursor: pointer;
     display: block;
@@ -113,12 +115,10 @@ a {
     position: relative;
     width: 20px;
     margin: 0 auto;
-    /*top: 10px;*/
     right: 16px;
 }
 
 .navbar .buttons input {
-    /*display: none;/**/
     z-index: 2;
     position: absolute;
     -webkit-transform: scale(1.5);
@@ -140,7 +140,7 @@ a {
 
 #menu { 
     display: none; 
-}/**/
+}
 
 #menu:checked + .buttons span:nth-of-type(1) {
     transform: rotate(45deg) translateY(8px);
@@ -159,9 +159,11 @@ a {
     left: 0px;
     transition: 0.5s all;
     display: block;/**/
-    
 }
+/* FIN MENU HAMBURGUESA */
+/* FIN NAV-BAR */
 
+/*INICIO HEADER*/
 header {
     padding: 16px;
     margin-top: 30px;
@@ -169,7 +171,6 @@ header {
 }
 
 header h1 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     text-align: left;
     font-size: 36px;
@@ -182,7 +183,6 @@ header h1 .punto {
 }
 
 header p {
-    font-family: "IBM Plex Mono", monospace;
     color: #000000;
     font-size: 16px;
     line-height: 24px;
@@ -201,7 +201,7 @@ header button {
     color: #060A24;
     background-color: #00F3BB;
     border: 0px;
-    font-family: "IBM Plex Mono", monospace;
+    
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
@@ -223,11 +223,11 @@ header button{
     transition: all 0.2s;
 }
 
+/*FIN HEADER*/
+
 .episodios{
     height: 900px;
     position: relative;
-    /*overflow: hidden;
-    box-sizing: border-box;*/
     z-index: 1;
 }
 
@@ -249,13 +249,9 @@ header button{
 
 .episodios h2 {
     position: relative;
-    /*margin-left: 16px;/**/
     margin-left: 200px;
-    /*padding-top: 64px;*/
     padding-top: 186px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    /*font-size: 36px;/**/
     font-size: 48px;
     line-height: 42px;
     text-align: left;
@@ -266,17 +262,9 @@ header button{
 .episodios .podcasts {
     box-sizing: border-box;
     position: relative;
-    
-    /*display: -webkit-box;
-    display: -ms-flexbox;/**/
     display: flex;
-    /*-webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;*/
     flex-direction: row;
-    /*-ms-flex-wrap: wrap;/**/
     flex-wrap: wrap;/**/
-
     margin-top: 21px;
     margin-left: 11px;
     margin-right: 11px;
@@ -289,14 +277,12 @@ header button{
     margin-bottom: 8px;
     box-sizing: border-box;
     margin-bottom: 11px;
-
     padding-right: 5px;
     padding-left: 5px;
 }
 
 .novedades{
     position: relative;
-    /*height: 341px;/**/
     overflow: hidden;
     height: 518px;
     padding-left: 16px;
@@ -318,16 +304,12 @@ header button{
     color: #060A24;
     background-color: #00F3BB;
     border: 0px;
-    /*height: 48px;
-    width: 100%;/**/
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     line-height: 22px;
     height: 56px;
-    /*width: 226px;/**/
     font-size: 18px;
     line-height: 24px;
     width: 345px;
@@ -342,7 +324,6 @@ header button{
 .novedades .contenido h2 {
     position: relative;
     margin-bottom: 36px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -374,7 +355,6 @@ header button{
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 14px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -395,8 +375,6 @@ header button{
     width: 33.3%;
 }
 
-
-
 .topicos {
     margin-top: 48px;
     margin-left: 16px;
@@ -407,7 +385,6 @@ header button{
 .topicos h2 {
     font-size: 36px;
     line-height: 42px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     text-align: left;
     color: #060A24;
@@ -428,7 +405,6 @@ header button{
     margin-bottom: 36px;
     width: 25%;
     margin: 0;
-    
 }
 
 .topicos .topicos-cards .icon-box .topicos-icon {
@@ -438,7 +414,6 @@ header button{
 }
 
 .topicos .topicos-cards .icon-box h4 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
     font-size: 24px;
     color: #060A24;
@@ -466,12 +441,10 @@ header button{
 }
 
 .nosotros .celular {
-    /*margin-top: -168px;/**/
     width: 457.6px;
 }
 
 .nosotros .venimos-textos h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -481,15 +454,14 @@ header button{
 }
 
 .nosotros .venimos-textos p {
-    font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     color: #000000;
     line-height: 22px;
     padding-bottom: 12px;
 }
 
+/*INICIO FOOTER*/
 footer{
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 14px;
@@ -502,7 +474,6 @@ footer{
     width: 100%;
     height: 80px;
     box-sizing: border-box;
-    /*padding-left: 16px;/**/
 }
 
 .footer-iconos{
@@ -517,4 +488,6 @@ footer{
 .footer-iconos a:hover {
     color: #00F3BB;
 }
+
+/*FIN FOOTER*/
 

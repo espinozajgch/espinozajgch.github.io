@@ -8,10 +8,10 @@
     color: #000;
 }
 
-/*permitir un desplazamiento suave de toda la página*/
+/*permitir un desplazamiento suave de toda la página/**/
 html {
     scroll-behavior: smooth;
-}
+}/**/
 
 /*Ajustes iniciales para listas*/
 ol, ul {

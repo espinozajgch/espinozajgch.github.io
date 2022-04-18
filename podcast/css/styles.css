@@ -1,3 +1,4 @@
+/*Ajustes iniciales*/
 * {
     margin:  0;
     padding: 0;
@@ -5,29 +6,40 @@
     outline: 0;
     font-size: 100%;
     color: #000;
-    
 }
 
+/*permitir un desplazamiento suave de toda la página/**/
+html {
+    scroll-behavior: smooth;
+}/**/
+
+/*Ajustes iniciales para listas*/
 ol, ul {
     list-style: none;
     padding: 0;
 }
 
+/*Ajustes iniciales para links*/
 a {
     text-decoration: none;
     padding: 0;
 }
 
-.main {
-    width: 100%; 
-    
+/*definicion del estilo de fuente para toda la pagina*/
+body{
+    font-family: "IBM Plex Mono", monospace;
+    /*font-family: "IBM Plex Sans", sans-serif;/**/
 }
 
 .contenedor {
-    /*display: flex;/**/ 
     width: 100%; 
 }
 
+.main {
+    width: 100%;     
+}
+
+/*INICIO NAV-BAR*/
 .navbar-dark{
     background-color: #333;
 }
@@ -36,10 +48,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /*overflow: hidden;
-    background-color: #333;
-    
-    /*top: 0;*/
+    /*overflow: hidden;*/
     width: 100%;
     height: 80px;
     box-sizing: border-box;
@@ -60,30 +69,24 @@ a {
 }
 
 .navbar-nav {
-    padding: 7px;/**/
+    padding: 7px;
     display: flex;
-    /*flex-direction: row; 
-    align-items: center;
-    height: 100%;*/
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 28px;
-    /*padding-top: 16px;/**/
 }
 
 .navbar-nav .nav-item a {
-        /*display: block;/**/
-        position: relative;
-        text-decoration: none;
-        color: white;
-        margin-bottom: 24px;
-        font-family: "IBM Plex Mono", monospace;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 28px;
+    position: relative;
+    text-decoration: none;
+    color: #FFFF;
+    margin-bottom: 24px;
+    
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 .navbar-nav li{
@@ -91,16 +94,19 @@ a {
 }
 
 .navbar-nav a:hover {
-    /*background: #ddd;/**/
-    color: #00F3BB;
+    color: #00F3BB !important;
     text-decoration: line-through;
+}
+
+.navbar-nav a {
+    transition: color 0.8s linear 0.2s;
 }
 
 .navbar-nav a:active {
     color: rgba(6, 10, 36, 0.56);
 }
 
-/* Btn */
+/* INICIO MENU HAMBURGUESA */
 .navbar .buttons {
     cursor: pointer;
     display: block;
@@ -109,12 +115,10 @@ a {
     position: relative;
     width: 20px;
     margin: 0 auto;
-    /*top: 10px;*/
     right: 16px;
 }
 
 .navbar .buttons input {
-    /*display: none;/**/
     z-index: 2;
     position: absolute;
     -webkit-transform: scale(1.5);
@@ -134,7 +138,9 @@ a {
 .navbar .buttons span:nth-of-type(2) { top: 45%; }
 .navbar .buttons span:nth-of-type(3) { top: 75%; }
 
-#menu { display: none; }/**/
+#menu { 
+    display: none; 
+}
 
 #menu:checked + .buttons span:nth-of-type(1) {
     transform: rotate(45deg) translateY(8px);
@@ -150,10 +156,14 @@ a {
 }
 
 #menu:checked + .buttons + .navbar-nav {
-    left: 0;
-    display: block;
+    left: 0px;
+    transition: 0.5s all;
+    display: block;/**/
 }
+/* FIN MENU HAMBURGUESA */
+/* FIN NAV-BAR */
 
+/*INICIO HEADER*/
 header {
     padding: 16px;
     margin-top: 30px;
@@ -161,7 +171,6 @@ header {
 }
 
 header h1 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     text-align: left;
     font-size: 36px;
@@ -174,7 +183,6 @@ header h1 .punto {
 }
 
 header p {
-    font-family: "IBM Plex Mono", monospace;
     color: #000000;
     font-size: 16px;
     line-height: 24px;
@@ -193,7 +201,7 @@ header button {
     color: #060A24;
     background-color: #00F3BB;
     border: 0px;
-    font-family: "IBM Plex Mono", monospace;
+    
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
@@ -210,11 +218,16 @@ header button:hover {
     background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
 }
 
+
+header button{
+    transition: all 0.2s;
+}
+
+/*FIN HEADER*/
+
 .episodios{
     height: 900px;
     position: relative;
-    /*overflow: hidden;
-    box-sizing: border-box;*/
     z-index: 1;
 }
 
@@ -236,13 +249,9 @@ header button:hover {
 
 .episodios h2 {
     position: relative;
-    /*margin-left: 16px;/**/
     margin-left: 200px;
-    /*padding-top: 64px;*/
     padding-top: 186px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    /*font-size: 36px;/**/
     font-size: 48px;
     line-height: 42px;
     text-align: left;
@@ -253,17 +262,9 @@ header button:hover {
 .episodios .podcasts {
     box-sizing: border-box;
     position: relative;
-    
-    /*display: -webkit-box;
-    display: -ms-flexbox;/**/
     display: flex;
-    /*-webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;*/
     flex-direction: row;
-    /*-ms-flex-wrap: wrap;/**/
     flex-wrap: wrap;/**/
-
     margin-top: 21px;
     margin-left: 11px;
     margin-right: 11px;
@@ -276,14 +277,12 @@ header button:hover {
     margin-bottom: 8px;
     box-sizing: border-box;
     margin-bottom: 11px;
-
     padding-right: 5px;
     padding-left: 5px;
 }
 
 .novedades{
     position: relative;
-    /*height: 341px;/**/
     overflow: hidden;
     height: 518px;
     padding-left: 16px;
@@ -305,16 +304,12 @@ header button:hover {
     color: #060A24;
     background-color: #00F3BB;
     border: 0px;
-    height: 48px;
-    width: 100%;
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     line-height: 22px;
     height: 56px;
-    width: 226px;
     font-size: 18px;
     line-height: 24px;
     width: 345px;
@@ -329,7 +324,6 @@ header button:hover {
 .novedades .contenido h2 {
     position: relative;
     margin-bottom: 36px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -361,7 +355,6 @@ header button:hover {
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 14px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -382,8 +375,6 @@ header button:hover {
     width: 33.3%;
 }
 
-
-
 .topicos {
     margin-top: 48px;
     margin-left: 16px;
@@ -394,7 +385,6 @@ header button:hover {
 .topicos h2 {
     font-size: 36px;
     line-height: 42px;
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     text-align: left;
     color: #060A24;
@@ -415,7 +405,6 @@ header button:hover {
     margin-bottom: 36px;
     width: 25%;
     margin: 0;
-    
 }
 
 .topicos .topicos-cards .icon-box .topicos-icon {
@@ -425,7 +414,6 @@ header button:hover {
 }
 
 .topicos .topicos-cards .icon-box h4 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
     font-size: 24px;
     color: #060A24;
@@ -453,12 +441,10 @@ header button:hover {
 }
 
 .nosotros .celular {
-    /*margin-top: -168px;/**/
     width: 457.6px;
 }
 
 .nosotros .venimos-textos h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
@@ -468,15 +454,14 @@ header button:hover {
 }
 
 .nosotros .venimos-textos p {
-    font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
     color: #000000;
     line-height: 22px;
     padding-bottom: 12px;
 }
 
+/*INICIO FOOTER*/
 footer{
-    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 14px;
@@ -489,7 +474,6 @@ footer{
     width: 100%;
     height: 80px;
     box-sizing: border-box;
-    /*padding-left: 16px;/**/
 }
 
 .footer-iconos{
@@ -505,284 +489,5 @@ footer{
     color: #00F3BB;
 }
 
-@media screen and (min-width: 1200px){
-    .topicos {
-        margin-left: 200px;
-        margin-right: 200px;
-    }
-}
+/*FIN FOOTER*/
 
-@media screen and (min-width: 1000px) {
-    #menu:checked + .buttons + .navbar-nav {
-        display: flex;
-    } 
-
-    .navbar .buttons{
-        display: none;
-    }
-
-    header {
-        margin-top: 120px;
-        margin-left: 200px;
-    }
-
-    header h1 {
-        font-size: 64px;
-        line-height: 84px;
-    }
-
-    .episodios .podcasts .pod {
-        margin-bottom: 72px;
-    }
-
-    .episodios .podcasts {
-        margin-top: 26px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .episodios .podcasts .pod {
-        padding-right: 18px;
-        padding-left: 18px;
-    }
-
-    .entrevistas h2 {
-        margin-left: 200px;
-        font-size: 48px;
-        line-height: 62px;
-    }
-
-    .entrevistas .fotos-contenedor {
-        margin-top: 36px;
-    }
-
-    .topicos {
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 34px;
-        margin-top: 64px;
-    }
-
-    .topicos h2 {
-        font-size: 48px;
-        line-height: 62px;
-    }
-
-    .nosotros {
-        margin-top: 0px;
-        overflow: visible;
-        align-items: flex-start;
-    }
-
-    .nosotros .celular {
-        margin-top: -168px;
-        width: 457.6px;
-    }
-
-    .nosotros .venimos-textos h2 {
-        margin-bottom: 24px;
-        line-height: 62px;
-        font-size: 48px;
-    }
-
-    .nosotros .venimos-textos p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .novedades .contenido h2 {
-        font-size: 48px;
-    }
-
-}
-
-
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-    #menu:checked + .buttons + .navbar-nav {
-        display: flex;
-    } 
-
-    .navbar .buttons{
-        display: none;
-    }
-
-    .episodios h2 {
-        font-size: 48px;
-        padding-top: 130px;
-        line-height: 62px;
-        margin-left: 16px;
-    }
-
-    header p {
-        margin-top: 16px;
-        font-size: 14px;
-        line-height: 22px;
-        width: 100%;
-    }
-
-    .episodios {
-        height: 630px;
-    }
-
-    .episodios .diagonal-ep {
-        height: 680px;
-    }
-
-    .topicos .topicos-cards .icon-box {
-        width: 50%;
-        margin: 0;
-    }
-
-    .topicos .topicos-cards .icon-box h4 {
-        margin-top: 16px;
-        width: 220px;
-    }
-
-    .nosotros .venimos-textos {
-        margin-top: 100px;
-    }
-
-    .nosotros .venimos-textos h2 {
-        margin-bottom: 24px;
-        line-height: 62px;
-        font-size: 48px;
-    }
-
-    .nosotros .celular {
-        width: 350px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    
-    .navbar{
-        justify-content: space-between;
-        /*padding-left: 16px;
-        /*padding-right: 16px;*/
-        height: 44px; 
-    }
-
-    .navbar li{
-        margin-left: 0px;
-        padding-left: 16px;/**/
-    }
-
-    .navbar-nav {
-        display: none;/**/
-        background-color: #0000EC;
-        flex-direction: column;
-        position: absolute;
-        /*justify-content: left !important;/**/
-        /*right: 0px;/**/
-        left: 100%;/**/
-        top: 44px;/**/
-        width: 98.1%;/**/
-        transition: 0.5s all;
-        overflow: hidden;
-        -webkit-transition: width 0.3s ease-out;
-        transition: width 0.3s ease-out;
-    }
-
-    header p {
-        margin-top: 16px;
-        font-size: 14px;
-        line-height: 22px;
-        width: 100%;
-    }
-
-    header .display-block{
-        display: block;
-    }
-
-    header .movil{
-        display: inline;
-    }
-
-    header .desktop{
-        display: none;
-    }
-
-    header button {
-        margin-top: 36px;
-        margin-bottom: 24px;
-        width: 100%;
-    }
-
-    .episodios h2 {
-        font-size: 36px;
-        padding-top: 100px;
-        line-height: 42px;
-        margin-left: 16px;
-    }
-
-    .episodios {
-        height: 520px;
-    }
-
-    .episodios .diagonal-ep {
-        height: 600px;
-    }
-
-    .nosotros {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nosotros .celular {
-        width: 350px;
-    }
-
-    .nosotros .venimos-textos {
-        padding-top: 0px;
-        width: 90%;
-    }
-
-    .footer-bar{
-        flex-direction: column;
-        flex-wrap: wrap; 
-        align-items: center;
-    }
-
-    .entrevistas .fotos-contenedor .foto-inv {
-        width: 50%;
-    }
-
-    .topicos .topicos-cards .icon-box {
-        width: 50%;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .episodios .podcasts .pod {
-        width: 100%;
-        /*height: 152px;
-        border: none;*/
-        margin-bottom: 8px;
-    }
-
-    .episodios {
-        height: 900px;
-    }
-
-    .entrevistas .fotos-contenedor {
-        flex-direction: column;
-    }
-
-    .entrevistas .fotos-contenedor .foto-inv {
-        width: 100%;
-    }
-
-    .topicos .topicos-cards .icon-box {
-        width: 100%;
-        margin: 0;
-    }
-
-    .episodios .diagonal-ep {
-        height: 992px;
-    }
-
-    .novedades{
-        height: 341px;/**/
-    }
-}

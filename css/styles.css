@@ -10157,9 +10157,6 @@ header.masthead h1 {
   height: 100%;
   width: 100%;
   color: #007bff;
-  /* background-color: #FFF; */
-  /* position: absolute; */
-  /* mix-blend-mode: screen; */
 }
 
 @media (max-width: 440px) {

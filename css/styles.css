@@ -10159,8 +10159,12 @@ header.masthead h1 {
   color: #007bff;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   #barra{
     display: none;
+  }
+
+  .skillfull{
+    display: block;
   }
 }

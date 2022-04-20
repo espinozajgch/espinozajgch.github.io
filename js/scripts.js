@@ -61,3 +61,24 @@
   });
 
 })(jQuery); // End of use strict
+
+
+function contador(id, time){
+  let cantidad = 0;
+  let tiempo = setInterval(()=>{
+    cantidad+=3;
+    $("#"+id).html(cantidad);  
+    if(cantidad===time){
+      clearInterval(tiempo);
+    }
+    //$("#counter").css("color", "#000000");
+  },80);
+}
+
+contador("counter_back",90);
+contador("counter_front",60);
+
+
+
+
+

@@ -10143,3 +10143,20 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+
+
+.skill{
+  font-size: 1.8rem;
+  /* font-family: sans-serif; */
+  font-weight: bold;
+  /* color: #555; */
+}
+
+.counter{
+  height: 100%;
+  width: 100%;
+  color: #007bff;
+  /* background-color: #FFF; */
+  /* position: absolute; */
+  /* mix-blend-mode: screen; */
+}

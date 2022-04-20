@@ -10097,11 +10097,13 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 3rem;
   }
+  
 }
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 3.5rem;
   }
+  
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
@@ -10144,7 +10146,6 @@ header.masthead h1 {
   color: rgba(255, 255, 255, 0.75);
 }
 
-
 .skill{
   font-size: 1.8rem;
   /* font-family: sans-serif; */
@@ -10159,4 +10160,10 @@ header.masthead h1 {
   /* background-color: #FFF; */
   /* position: absolute; */
   /* mix-blend-mode: screen; */
+}
+
+@media (max-width: 440px) {
+  #barra{
+    display: none;
+  }
 }

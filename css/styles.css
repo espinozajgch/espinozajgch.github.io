@@ -10186,3 +10186,7 @@ header.masthead h1 {
     display: block;
   }
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */

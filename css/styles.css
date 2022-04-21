@@ -10164,6 +10164,24 @@ header.masthead h1 {
     display: none;
   }
 
+  #comandos{
+    display: none;
+  }
+
+  .skillfull{
+    display: block;
+  }
+}
+
+@media (max-width: 820px) {
+  #barra{
+    display: none;
+  }
+
+  #comandos{
+    display: none;
+  }
+
   .skillfull{
     display: block;
   }

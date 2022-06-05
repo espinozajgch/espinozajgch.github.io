@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta property="og:title" content="Jose Espinoza" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://espinozajgch.github.io" />
+        <meta property="og:description"   content="José Espinoza - Software Developer" />
+        <meta property="og:image" content="https://espinozajgch.github.io/assets/img/bg-masthead_data.webp" />
+        
+        <meta property="description"   content="José Espinoza - Full-Stack Developer" />
+        <meta name="author" content="José Espinoza" />
+        <meta name="robots" content="index"/>
+        <meta name="keywords" content="Java, SpringBoot, Reactjs, Html, Css, Js, SQL, Git, Docker, Postman, Jmeter, Linux"/>
+        
         <title>José Espinoza - Software Developer</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/geo.png" />
+        <link rel="apple-touch-icon" href="assets/img/geo.png">
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" /> -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" /> -->
@@ -18,18 +28,15 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-        <style>
-            /*.funny-boxes:hover > .funny-boxes-icon {
-                background-color: #3996cc;
-            }
-            .funny-boxes > .funny-boxes-icon {
-                border: 1px solid #3996cc;
-                color: #3996cc;
-            }
-            .funny-boxes > .funny-boxes-text > h4:after {
-                background-color: #3996cc;
-            }*/
-        </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKXELQ7N08"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HKXELQ7N08');
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -39,8 +46,8 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#training">Acerca de mi</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificates">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#me">Acerca de mi</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#hobbies">Hobbies</a></li>
                         <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a></li-->
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contáctame</a></li>
@@ -65,13 +72,13 @@
                         </div>
                         
                         <!-- <p class="text-white-75 font-weight-light mb-5"> Actualmente estoy trabajando como desarrollador de microservicios con Java/Spring Boot</p> y estoy aprendiendo sobre el futuro de la tecnologia (Blockchain,Data Analytics)!</p> -->
-                        <a class="btn btn-info btn-xl js-scroll-trigger" href="#training">Conoce más de mi</a>
+                        <a class="btn btn-info btn-xl js-scroll-trigger" href="#me">Conoce más de mi</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- About-->
-        <section class="page-section bg-info" id="training">
+        <section class="page-section bg-info" id="me">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-lg-8 text-center text-white px-4 py-4">
@@ -87,7 +94,7 @@
                                 </p>
                           
                                 <p class="text-justify text-monospace  mb-4">
-                                    Mi expericia laboral me ha permitido desempeñarme tanto en Backend (PHP, JAVA, SPRING BOOT) como FrontEnd (HTML, CSS, JAVASCRIPT, REACT), aunque en los ultimos años me he desempeñado como desarrollador de microservicios (Api Rest), trabajo constantemente con Control de Versiones (Git), Docker (Orquestacion de contenedores con docker-compose) 
+                                    Mi expericia laboral me ha permitido desempeñarme tanto en Backend (PHP, JAVA, SPRING BOOT) como FrontEnd (HTML, CSS, JAVASCRIPT, REACT), aunque en los últimos años me he desempeñado como desarrollador de microservicios (Api Rest), trabajo constantemente con Control de Versiones (Git), Docker (Orquestacion de contenedores con docker-compose) 
                                     en la implementacion de servicios cloud en las plataformas de AWS y GCP junto con herramientas para pruebas como Postman y JMeter. 
                                 </p>
 
@@ -103,8 +110,8 @@
                 </div>
             </div>
         </section>
-        <!-- certificates-->
-        <section class="page-section" id="certificates">
+        <!-- hobbies-->
+        <section class="page-section" id="hobbies">
             <div class="container">
                 <h2 class="text-uppercase text-center mt-0">Hobbies</h2>
                 <hr class="divider my-4" />
@@ -307,7 +314,7 @@
         <script src="js/scripts.js"></script>
 
         <script>
-            console.info("Muy bien por llegar aqui ⚡");
+            console.info("%cMuy bien por llegar aqui ⚡","font-size:2rem;-webkit-text-stroke: 1px black;font-weight:bold");
             console.info("Mi perfil de freelance: https://www.workana.com/freelancer/032727fe49356f9f170e8f82c9c26e0d");
             console.info("COMO FRONTEND: he trabajado en el diseño y desarrollo de paginas Web (HTML, CSS, JavaScript) implementado ademas SEO Orgánico y herramientas como Google Analytics, API GRAPH de Facebook, Google Maps Api, actualmente estoy fortaleciendo mis conociemientos en React");
             console.info("COMO BACKEND: he participado en proyectos de Web Scraping con java pero principalmente me he dedicado al desarrollo y mantencion de Microservicios (Api Rest) utilizando Spring Boot, asi como la implementacion de Api Proxies con ApiGee de Google también poseo solidos conocimientos en PHP");

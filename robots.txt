@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /assets/
+Disallow: README.md
+
+Allow: /css/
+Allow: /js/
+Allow: index.html
+
+Sitemap: https://espinozajgch.github.io./
